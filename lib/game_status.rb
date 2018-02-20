@@ -16,7 +16,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  verdict = true
   WIN_COMBINATIONS.detect do |combo|
     position1 = combo[0]
     position2 = combo[1]
@@ -26,10 +25,9 @@ def won?(board)
     elsif board[position1] == "O" && board[position2] == "O" && board[position3] == "O"
       true
     else
-      verdict = false
+      false
     end
   end
-  verdict
 end
 
 def full?(board)
