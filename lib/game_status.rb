@@ -49,4 +49,5 @@ end
 def over?(board)
   if won?(board) == true
     true
+  end
 end
