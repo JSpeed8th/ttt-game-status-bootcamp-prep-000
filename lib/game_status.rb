@@ -49,5 +49,7 @@ end
 def over? (board)
   if won?(board)
     true
+  elsif draw?(board)
+  true
   end
 end
