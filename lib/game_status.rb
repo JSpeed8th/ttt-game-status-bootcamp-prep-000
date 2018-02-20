@@ -23,7 +23,7 @@ def won?(board)
     if board[position1] == "X" && board[position2] == "X" && board[position3] == "X"
       return true
     elsif board[position1] == "O" && board[position2] == "O" && board[position3] == "O"
-      return true
+      true
     else
       false
     end
