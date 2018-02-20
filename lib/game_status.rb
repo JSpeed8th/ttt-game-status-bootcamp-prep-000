@@ -21,9 +21,9 @@ def won?(board)
     position2 = combo[1]
     position3 = combo[2]
     if board[position1] == "X" && board[position2] == "X" && board[position3] == "X"
-      true
+      return true
     elsif board[position1] == "O" && board[position2] == "O" && board[position3] == "O"
-      true
+      return true
     else
       false
     end
@@ -47,8 +47,7 @@ def draw?(board)
 end
 
 def over? (board)
-  if won?(board) == true || draw?(board) == true || full?(board) == true ||
-    won?(board) == true && full?(board) == false
+  if won?(board) == true || draw?(board) == true || full?(board) == true
     true
   end
 end
