@@ -39,9 +39,9 @@ end
 def draw?(board)
   if full?(board) == true && won?(board) == nil
     true
-  elsif won?(board) == nil && full?(board) == nil
+  elsif won?(board) == false && full?(board) == false
     false
-  elsif won?(board) == true && full?(board) == nil
+  elsif full?(board) == false && won?(board) == true
     true
   end
 end
